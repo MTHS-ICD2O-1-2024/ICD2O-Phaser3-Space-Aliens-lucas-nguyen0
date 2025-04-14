@@ -9,6 +9,9 @@
 /**
  *Start Phaser Gamer.
  */
+
+"use strict"
+
 const config = {
   type: Phaser.AUTO,
   width: 1920,
