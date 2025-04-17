@@ -10,7 +10,9 @@
  *Start Phaser Gamer.
  */
 
-'use strict'
+import SplashScene from './splashscene.js'
+
+const splashScene = new SplashScene()
 
 const config = {
   type: Phaser.AUTO,
@@ -31,3 +33,7 @@ const config = {
 
 const game = new Phaser.Game(config)
 console.log(game)
+
+game.scne.add('splashScene', splashScene)
+
+game.scne.start('splashScene')
